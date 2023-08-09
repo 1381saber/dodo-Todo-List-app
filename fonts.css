@@ -1,0 +1,22 @@
+@font-face {
+  font-family: f1;
+  font-style: normal;
+  src: url("/fonts/NPIKamranBold.ttf") format(ttf);
+}
+
+@font-face {
+  font-family: f2;
+  font-style: normal;
+  src: url("/fonts/NPIKoodakBoldIranic.ttf") format(ttf);
+}
+
+@font-face {
+  font-family: f3;
+  font-style: normal;
+  src: url("/fonts/NPIKufian.ttf") format(ttf);
+}
+
+body,
+button {
+  font-family: f2;
+}
