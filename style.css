@@ -1,7 +1,200 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "bebas";
+    list-style: none;
+}
+
+/*  VARIABLES : */
+:root {
+    --primaryColor: #6d28d9;
+    --titleColor: rgb(79, 29, 120);
+    --secondaryColor: #ede9fe;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #7c7c7c;
+    --secondayGrey: #ccc;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+    --mainRed: #db2777;
+}
+
+body {
+    background-image: url("/pic2.jpg");
+    font-family: "bebas";
+    color: var(--mainBlack);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+header {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-top: 3rem;
+    justify-content: center;
+    color: var(--titleColor);
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form-container {
+    display: flex;
+}
+
+.todo-container {
+    margin-top: 1rem;
+    width: 25rem;
+}
+
+img {
+    margin-top: 2.2rem;
+    height: auto;
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    width: 25rem;
+    background-color: var(--mainWhite);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid var(--secondayGrey);
+    overflow: hidden;
+}
+
+form input {
+    flex: 1;
+    font-weight: bold;
+    border: none;
+}
+
+.head1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+form input,
+form button {
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+form input:hover {
+    background-color: #d89fff;
+    cursor: pointer;
+    border: 0.1rem solid plum;
+}
+
+form button {
+    color: var(--primaryColor);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: var(--primaryColor);
+    color: var(--mainWhite);
+}
+
+.todo {
+    background-color: var(--mainWhite);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    display: flex;
+}
+
+.todo .todo__title {
+    color: var(--primaryColor);
+    font-weight: bold;
+    flex: 1;
+}
+
+.todo button {
+    display: block;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.fa-trash-alt {
+    color: var(--mainRed);
+}
+
+.fa-check-square {
+    color: var(--primaryColor);
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+select {
+    appearance: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 1rem;
+    color: var(--primaryColor);
+    font-size: 1.2rem;
+}
+
+select:hover {
+    background-color: rgb(188, 167, 208);
+}
+
+.select {
+    margin-left: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+    width: 10rem;
+    position: relative;
+    border: 2px solid var(--secondayGrey);
+    font-weight: bold;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    color: var(--primaryColor);
+    pointer-events: none;
+}
+
+button {
+    border: none;
+    outline: 0;
+}
+
+button>i {
+    pointer-events: none;
 }
