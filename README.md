@@ -23,5 +23,8 @@ How to Use
     Click the checkbox next to a task to mark it as done.
     Click the trash can icon next to a task to delete it from the list.
 
-Contributing: 
-If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
+Contributing:     
+
+    If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
+---------------------------------------------------
+<img width="1440" alt="Screenshot 1402-05-20 at 00 04 38" src="https://github.com/1381saber/dodo-Todo-List-app/assets/87490751/66d52414-64e6-4127-b841-d3274f3c28f3">
